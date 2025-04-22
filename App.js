@@ -6,7 +6,9 @@ const cors = require('cors')
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+    origin:"https://mernecproject.netlify.app"
+}))
 
 const user_api =require('./Api/UserApi')
 const cards_api =require('./Api/CardApi')
