@@ -11,7 +11,7 @@ app.use(cors())
 const user_api =require('./Api/UserApi')
 const cards_api =require('./Api/CardApi')
 
-mongoose.connect('mongodb://localhost:27017/ECproject')
+mongoose.connect('mongodb+srv://sangeethamurugan3012:root@cluster0.s8pjk4s.mongodb.net/EcprojectMern')
 .then((connection)=>{
     if(connection){
         console.log("Connected");
