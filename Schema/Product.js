@@ -5,6 +5,7 @@ const CardData =mongoose.Schema({
         type:String,
         required :true,
     },
+    
 
     price :{
         type:String,
